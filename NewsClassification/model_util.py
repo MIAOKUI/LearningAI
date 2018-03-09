@@ -135,7 +135,7 @@ def _performance(md, train_data, train_label, test_data, test_label):
     test_pred_begin = time.time()
     test_pred = md.predict(test_data)
     test_pred_time = time.time() - test_pred_begin
-    print("Predict accuracy: train "+str(train_score) + ", test: " + str(test_score))
+    print("Predict accuracy: train_small "+str(train_score) + ", test: " + str(test_score))
     print("Running time: fit " + str(fit_time) + ", Predict on Train: " + str(train_pred_time) + ", Predict on Test: " + str(test_pred_time))
     return train_pred, test_pred, train_score, test_score
 
